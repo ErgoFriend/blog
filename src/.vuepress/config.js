@@ -1,4 +1,6 @@
 module.exports = {
+  base: '/blog/',
+  dest: 'docs',
   title: 'ErgoFriend',
   description: 'Blog & Showcase',
   head: [
