@@ -1,6 +1,6 @@
 workflow "Build and Publish" {
-  resolves = ["HTTP client"]
   on = "push"
+  resolves = ["GitHub Action for npm-1"]
 }
 
 action "Filters for GitHub Actions" {
@@ -8,19 +8,14 @@ action "Filters for GitHub Actions" {
   args = "branch master"
 }
 
-action "GitHub Action for npm install" {
+action "GitHub Action for npm" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Filters for GitHub Actions"]
   args = "install"
 }
 
-action "GitHub Action for npm build" {
+action "GitHub Action for npm-1" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["GitHub Action for npm install"]
-  args = "vuepress build docs"
-}
-
-action "HTTP client" {
-  uses = "swinton/httpie.action@8ab0a0e926d091e0444fcacd5eb679d2e2d4ab3d"
   needs = ["GitHub Action for npm"]
+  args = "vuepress build docs"
 }
