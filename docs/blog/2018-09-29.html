@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>タグ機能！ | ErgoFriend</title>
+    <meta name="description" content="サンプルは見つかるが...">
+    <link rel="icon" href="https://i.gyazo.com/4df386fd64685c61924afbd2a799a51b.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
+    <meta name="twitter:card" content="summary"><meta name="twitter:site" content="@ergofriend"><meta property="og:url" content="https://brog.netlify.com/blog/2018-09-30"><meta property="og:title" content="タグ機能！"><meta property="og:description" content="ネットワークのパフォーマンスメトリックを知る。"><meta property="og:image" content="null">
+    <link rel="preload" href="/blog/assets/css/styles.4fa69173.css" as="style"><link rel="preload" href="/blog/assets/js/app.4fa69173.js" as="script"><link rel="preload" href="/blog/assets/js/8.1e1c5e41.js" as="script"><link rel="prefetch" href="/blog/assets/js/7.3b22e1ef.js"><link rel="prefetch" href="/blog/assets/css/1.styles.5188b4e2.css"><link rel="prefetch" href="/blog/assets/js/1.5188b4e2.js"><link rel="prefetch" href="/blog/assets/css/2.styles.958f0182.css"><link rel="prefetch" href="/blog/assets/js/2.958f0182.js"><link rel="prefetch" href="/blog/assets/css/3.styles.dc1a0ecf.css"><link rel="prefetch" href="/blog/assets/js/3.dc1a0ecf.js"><link rel="prefetch" href="/blog/assets/css/4.styles.e3ef7227.css"><link rel="prefetch" href="/blog/assets/js/4.e3ef7227.js"><link rel="prefetch" href="/blog/assets/js/5.da2be32e.js"><link rel="prefetch" href="/blog/assets/js/6.a407689a.js"><link rel="prefetch" href="/blog/assets/js/9.bdb28ee6.js"><link rel="prefetch" href="/blog/assets/js/10.7a6c3091.js"><link rel="prefetch" href="/blog/assets/js/11.118a5dd1.js"><link rel="prefetch" href="/blog/assets/js/12.82374357.js"><link rel="prefetch" href="/blog/assets/js/13.3b173c1c.js"><link rel="prefetch" href="/blog/assets/js/14.ef2a2950.js"><link rel="prefetch" href="/blog/assets/js/15.56af97d3.js"><link rel="prefetch" href="/blog/assets/js/16.5431d94e.js"><link rel="prefetch" href="/blog/assets/js/17.5487cf54.js"><link rel="prefetch" href="/blog/assets/js/18.164235a5.js"><link rel="prefetch" href="/blog/assets/js/19.3d5637ee.js">
+    <link rel="stylesheet" href="/blog/assets/css/1.styles.5188b4e2.css"><link rel="stylesheet" href="/blog/assets/css/2.styles.958f0182.css"><link rel="stylesheet" href="/blog/assets/css/3.styles.dc1a0ecf.css"><link rel="stylesheet" href="/blog/assets/css/4.styles.e3ef7227.css"><link rel="stylesheet" href="/blog/assets/css/styles.4fa69173.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-57d12814><header class="navbar" data-v-57d12814><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">ErgoFriend</span></a> <div class="links" style="max-width:nullpx;"><nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">HOME</a></div><div class="nav-item"><a href="/blog/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/blog/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/blog/projects/" class="nav-link">Projects</a></div> <!----></nav> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></header> <div class="sidebar-mask" data-v-57d12814></div> <div class="sidebar md_sidebar" data-v-57d12814><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">HOME</a></div><div class="nav-item"><a href="/blog/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/blog/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/blog/projects/" class="nav-link">Projects</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>タグ機能！</span> <!----></p> <ul class="sidebar-group-items"></ul></div></li></ul> </div> <div class="page" data-v-57d12814> <div class="content"><h1 id="どれもposts"><a href="#どれもposts" aria-hidden="true" class="header-anchor">#</a> どれも<code>posts</code></h1> <p>VuePress で タグ機能を使ってるサイトやテンプレートはいくつかあるけど、どれも 1 ページでしか機能してない。<br>
+ブログとプロジェクトで２ページだからそのままでは使えない...<br>
+参考にして作ろうとしてるけど、ソースコード読んでも？？？？？って感じ。</p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/3/2019, 3:17:23 AM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/blog/2018-10-01.html" class="prev">
+          パフォーマンスメトリック
+        </a></span> <span class="next"><a href="/blog/blog/2018-09-30.html">
+          VuePress theme デフォルトをいじる
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/blog/assets/js/8.1e1c5e41.js" defer></script><script src="/blog/assets/js/app.4fa69173.js" defer></script>
+  </body>
+</html>
