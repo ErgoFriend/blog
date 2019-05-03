@@ -1,6 +1,6 @@
 workflow "Build and Publish" {
   on = "push"
-  resolves = ["Build"]
+  resolves = ["Deploy to GitHub Pages"]
 }
 
 action "Master branch only" {
@@ -18,4 +18,13 @@ action "Build" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   args = "build"
   needs = ["Install"]
+}
+
+action "Deploy to GitHub Pages" {
+  uses = "maxheld83/ghpages@v0.2.1"
+  needs = ["Build"]
+  env = {
+    BUILD_DIR = "docs/"
+  }
+  secrets = ["GITHUB_TOKEN"]
 }
