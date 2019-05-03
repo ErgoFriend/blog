@@ -26,5 +26,8 @@ action "Deploy to GitHub Pages" {
   env = {
     BUILD_DIR = "docs/"
   }
-  secrets = ["GITHUB_TOKEN"]
+  secrets = [
+    "GITHUB_TOKEN",
+    "GH_PAT",
+  ]
 }
