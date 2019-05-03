@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/blog/',
+  // base: '/blog/',
   dest: 'docs',
   title: 'ErgoFriend',
   description: 'Blog & Showcase',
