@@ -22,7 +22,7 @@
             <v-chip :key="tag" v-for="tag in post.frontmatter.tag" label small outline color="blue" @click="findArticles(tag)">{{tag}}</v-chip>
             </v-layout>
               <v-layout justify-end>
-              <v-btn small flat color="blue"><a v-bind:href="post.path">続きを読む</a></v-btn>
+              <v-btn small flat color="blue"><a v-bind:href="$withBase(post.path)">続きを読む</a></v-btn>
               </v-layout>
           </v-card-actions>
         </v-card>
@@ -33,7 +33,7 @@
         <v-card v-if="post.title">
           <v-card-title>
             <div>
-              <span class="headline"><a v-bind:href="post.path">{{post.title}}</a></span><br><br>
+              <span class="headline"><a v-bind:href="$withBase(post.path)">{{post.title}}</a></span><br><br>
               <span>{{post.frontmatter.description}}</span>
             </div>
           </v-card-title>
@@ -42,7 +42,7 @@
             <v-chip :key="tag" v-for="tag in post.frontmatter.tag" label small outline color="blue" @click="findArticles(tag)">{{tag}}</v-chip>
             </v-layout>
               <v-layout justify-end>
-              <v-btn flat color="blue"><a v-bind:href="post.path">続きを読む</a></v-btn>
+              <v-btn flat color="blue"><a v-bind:href="$withBase(post.path)">続きを読む</a></v-btn>
               </v-layout>
           </v-card-actions>
         </v-card>

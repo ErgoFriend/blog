@@ -18,7 +18,7 @@
         </v-img>
         <v-card-title primary-title>
           <div>
-            <span class="headline"><a v-bind:href="post.path">{{post.title}}</a></span><br>
+            <span class="headline"><a v-bind:href="$withBase(post.path)">{{post.title}}</a></span><br>
             <span class="grey--text">{{post.frontmatter.description}}</span>
           </div>
         </v-card-title>
@@ -27,7 +27,7 @@
           <v-chip :key="tag" v-for="tag in post.frontmatter.tag" small label outline color="blue">{{tag}}</v-chip>
           </v-layout>
             <v-layout justify-end>
-            <v-btn small flat color="blue"><a v-bind:href="post.path">続きを読む</a></v-btn>
+            <v-btn small flat color="blue"><a v-bind:href="$withBase(post.path)">続きを読む</a></v-btn>
             </v-layout>
         </v-card-actions>
       </v-card>
