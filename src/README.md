@@ -26,7 +26,7 @@ meta:
 
 # - <a href="/about/">私について</a>
 
-# - <a href="/blog/">ブログ！</a>
+# - <a href="https://blog.kasu.dev/">ブログ！</a>
 
 # - <a href="/projects/">作ったもの</a>
 
